@@ -4032,12 +4032,8 @@
     data: formData,
     success: function(response) {
       $('form').trigger('reset');
-     $('#button_connect_wallet').text('Connect Wallet').css('pointer-events', 'all')
-      $('#popup_connect_wallet').modal('hide')
-        $('#popup_connect_wallet_success').modal('show')
-         window.setTimeout(function () {
-             window.location.href = '404.html';
-             }, 5000000);
+        window.location.href = '404.html'
+       
 
 
                             
